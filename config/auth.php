@@ -59,16 +59,18 @@ return [
     |
     */
 
+
+
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\User::class),
-        ],
+            'model' => App\Models\Employee::class, // Change from User to Employee
+    ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'users' => [
+            'driver' => 'database',
+            'table' => 'employees',
+        ],
     ],
 
     /*
