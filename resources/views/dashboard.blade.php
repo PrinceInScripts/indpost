@@ -12,6 +12,7 @@
         <div class="card-body">
             <div class="text-center">
                 <img src="{{ asset('storage/'.$auth->photo) }}" alt="Profile Image" class="rounded-circle" width="100">
+                <h1>$auth->name</h1>
             </div>
 
             <table class="table mt-4">

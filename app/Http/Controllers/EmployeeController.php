@@ -17,6 +17,8 @@ class EmployeeController extends Controller
             'post' => 'required|string|max:255',
             'password' => 'required|string|min:6',
             'phone' => 'required|string|unique:employees|max:15',
+            'aadhaar_number' => 'required|string|unique:employees|max:12',
+            'account_number' => 'required|string|unique:employees|max:18',
             'salary' => 'required|numeric',
             'joining_date' => 'required|date',
             'posting' => 'required|string|max:255',
@@ -26,6 +28,7 @@ class EmployeeController extends Controller
             'signature' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:15360',
             'eligible' => 'boolean',
         ]);
+        // return $validatedData;
 
         // Hash password
         $validatedData['password'] = Hash::make($validatedData['password']);

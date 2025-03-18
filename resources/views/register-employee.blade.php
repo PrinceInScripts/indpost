@@ -98,6 +98,18 @@
                                 </div>
                             </div>
 
+                             <!-- Aadhaar Number -->
+                             <div class="mb-3">
+                                <label class="form-label">Aadhaar Number</label>
+                                <input type="text" name="aadhaar_number" class="form-control" required>
+                            </div>
+
+                            <!-- Account Number -->
+                            <div class="mb-3">
+                                <label class="form-label">Account Number</label>
+                                <input type="text" name="account_number" class="form-control" required>
+                            </div>
+
                             <div class="mb-3">
                                 <label class="form-label">Photo</label>
                                 <input type="file" name="photo" class="form-control">
